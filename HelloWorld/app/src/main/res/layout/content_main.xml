@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFC0CB"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.werapun.helloworld.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="215dp"
+        android:layout_height="212dp"
+
+        android:layout_marginTop="36dp"
+        android:src="@drawable/image"
+
+        android:visibility="visible"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <Button
+        android:layout_width="85dp"
+        android:layout_height="38dp"
+        android:layout_marginLeft="142dp"
+        android:layout_marginTop="350dp"
+        android:background="#FF0000"
+
+        android:onClick="toDetail"
+        android:text="PROFILE"
+        android:textColor="#FFFFFF"
+        tools:ignore="MissingConstraints" />
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="85dp"
+            android:layout_height="38dp"
+            android:layout_marginLeft="142dp"
+            android:layout_marginTop="400dp"
+            android:background="#FF0000"
+
+            android:onClick="toGallery"
+            android:text="GALLERY"
+            android:textColor="#FFFFFF"
+            tools:ignore="MissingConstraints" />
+    </LinearLayout>
+
+
+
+
+</android.support.constraint.ConstraintLayout>
